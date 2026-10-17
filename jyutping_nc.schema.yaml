@@ -1,0 +1,164 @@
+# Rime schema
+# encoding: utf-8
+# filename: jyutping_nc.schema.yaml
+
+schema:
+  schema_id: jyutping_nc
+  name: 粵語雙拼 (自然碼兼容版)
+  version: "1.2"
+  author:
+    - 方案設計：User & AI
+  description: |
+    基於 Jyutping (香港語言學學會粵語拼音方案) 開發的雙拼方案。
+    聲母鍵位兼容自然碼習慣，韻母極致壓縮，無縫過渡肌肉記憶。
+  dependencies:
+    - jyutping  # 依賴開源 rime-cantonese 的底層詞庫
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 繁體, 简体 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: "zyxwvutsrqponmlkjihgfedcba;"
+  initials: "abcdefghijklmnopqrstuvwxyz"
+  delimiter: " '"
+  max_code_length: 2
+  auto_select: false
+  algebra:
+    # 1. 處理獨立鼻音 (必須在聲母替換前，直接映射為兩鍵)
+    - xform/^m$/om/
+    - xform/^ng$/ov/
+    
+    # 2. 處理零聲母 (開頭是 a, e, i, o, u 的音節前綴加 o)
+    - xform/^([aeiou])/o$1/
+    - xform/^oom$/om/
+    - xform/^oov$/ov/
+    
+    # 3. 處理特化聲母替換
+    - xform/^gw/i/
+    - xform/^kw/u/
+    - xform/^ng/v/
+    - xform/^j/y/
+    
+    # 4. 處理韻母替換 (嚴格依照長度與優先級排序，防止短綴誤殺)
+    - xform/aam$/c/
+    - xform/aap$/c/
+    - xform/aang$/h/
+    - xform/aak$/h/
+    - xform/oeng$/x/
+    - xform/oek$/x/
+    - xform/aan$/j/
+    - xform/aat$/j/
+    - xform/ok$/s/
+    - xform/aau$/k/
+    - xform/aai$/l/
+    - xform/ing$/;/
+    - xform/ik$/;/
+    - xform/ong$/s/
+    - xform/ung$/s/
+    - xform/eoi$/y/
+    - xform/eon$/p/
+    - xform/eot$/y/
+    - xform/on$/s/
+    - xform/yut$/r/
+    - xform/yun$/r/
+    - xform/eng$/g/
+    - xform/ek$/t/
+    
+    # am / ap 歸位至 D 鍵
+    - xform/am$/d/
+    - xform/ap$/d/
+
+    # 修正：an / at / on 歸位至 F 鍵（讓 hon -> hf）    
+    - xform/an$/f/
+    - xform/at$/f/
+
+
+    - xform/ang$/g/
+    - xform/ak$/g/
+    - xform/au$/k/
+    - xform/ai$/l/
+    - xform/im$/m/
+    - xform/ip$/m/
+    
+    # in 歸位至 N 鍵，it 歸位至 T 鍵
+    - xform/in$/n/
+    - xform/it$/t/
+    
+    - xform/uk$/s/
+    
+    # ou 歸位至 B 鍵
+    - xform/ou$/b/
+    
+    - xform/oi$/o/
+    - xform/oe$/w/
+    - xform/^w$/oe/
+    - xform/ei$/z/
+    - xform/un$/p/
+    - xform/ut$/p/
+    - xform/yu$/v/
+    - xform/ui$/v/
+    
+    # iu 歸位至 Q 鍵
+    - xform/iu$/q/
+    
+    - xform/aa$/a/
+    
+    # 5. 單字母韻母收尾
+    - xform/a$/a/
+    - xform/e$/e/
+    - xform/i$/i/
+    - xform/o$/o/
+    - xform/u$/u/
+    - xform/m$/m/     # <- 補上這一行，確保 om 順利保留為 2 鍵
+    - xform/v$/v/     # <- 補上這一行，確保 ov 順利保留為 2 鍵
+
+    # 6. 強制純雙拼保險（封殺所有全拼與單鍵彈選單干擾）
+    - erase/^.{3,}$/
+    - erase/^.$/
+
+translator:
+  dictionary: jyutping_nc  # 本地優先覆蓋詞庫（import jyutping）
+  prism: jyutping_nc
+  enable_user_dict: true
+  enable_sentence: true
+  enable_encoder: true
+  encode_commit_history: true
+  max_phrase_length: 7
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default

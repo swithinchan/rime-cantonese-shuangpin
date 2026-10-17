@@ -1,0 +1,24 @@
+# 建置產物
+build/
+
+# Rime 個人資料／同步資料
+installation.yaml
+sync/
+user.yaml
+*.userdb/
+
+# Python
+__pycache__/
+*.pyc
+
+# 編輯器備份
+*~
+*.bkup
+.DS_Store
+
+# 非本輸入法核心檔案（可按需要手動加入）
+gemini.md
+你好嗎-歌詞.txt
+plum/
+zh-hant-t-essay-bgc.gram
+zh-hant-t-essay-bgw.gram

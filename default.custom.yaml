@@ -1,0 +1,4 @@
+patch:
+  schema_list:
+    - schema: jyutping_nc
+  menu/page_size: 8

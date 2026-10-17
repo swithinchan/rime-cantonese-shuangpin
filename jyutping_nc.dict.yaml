@@ -1,0 +1,19 @@
+# Rime dictionary
+# encoding: utf-8
+
+---
+name: jyutping_nc
+version: "2026.10.17"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - jyutping
+...
+
+靚	leng	9999
+臘	laap	9999
+靚靚	leng leng	9999
+臘鴨	laap aap	9999
+鐵路	tit lou	9999
+規格表	kwai gaak biu	9999
+關	gwaan	9999
