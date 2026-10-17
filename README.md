@@ -348,16 +348,11 @@ python3 collision_stats.py \
 
 以下互動式 HTML 可直接在瀏覽器開啟，方便檢查每個聲母與韻母的交叉分佈：
 
-- [字數（去重）交叉統計](<./LSHK_聲母x韻母_交叉統計_字數（去重）.html>)
-- [詞條數交叉統計](<./LSHK_聲母x韻母_交叉統計_詞條數.html>)
-- [百分比交叉統計](<./LSHK_聲母x韻母_交叉統計_百分比.html>)
+- [字數（去重）交叉統計](<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_字數（去重）.html>)
+- [詞條數交叉統計](<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_詞條數.html>)
+- [百分比交叉統計](<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_百分比.html>)
 
-GitHub 檔案頁只會顯示 HTML 原始碼；如要直接以瀏覽器開啟，請使用 GitHub Pages：
-
-- 統計首頁：<https://swithinchan.github.io/rime-cantonese-shuangpin/>
-- 字數（去重）：<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_字數（去重）.html>
-- 詞條數：<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_詞條數.html>
-- 百分比：<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_百分比.html>
+統計首頁：<https://swithinchan.github.io/rime-cantonese-shuangpin/>
 
 ## 檔案說明
 
