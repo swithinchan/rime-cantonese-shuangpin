@@ -352,6 +352,13 @@ python3 collision_stats.py \
 - [詞條數交叉統計](<./LSHK_聲母x韻母_交叉統計_詞條數.html>)
 - [百分比交叉統計](<./LSHK_聲母x韻母_交叉統計_百分比.html>)
 
+GitHub 檔案頁只會顯示 HTML 原始碼；如要直接以瀏覽器開啟，請使用 GitHub Pages：
+
+- 統計首頁：<https://swithinchan.github.io/rime-cantonese-shuangpin/>
+- 字數（去重）：<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_字數（去重）.html>
+- 詞條數：<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_詞條數.html>
+- 百分比：<https://swithinchan.github.io/rime-cantonese-shuangpin/LSHK_聲母x韻母_交叉統計_百分比.html>
+
 ## 檔案說明
 
 | 檔案 | 用途 |
