@@ -384,3 +384,7 @@ python3 collision_stats.py \
 - 感謝「粵拼輸入法 App」作者張兵先生的指導：<https://jyutping.app/>。
 - 感謝香港中文大學「粵語審音配詞字庫」免費公開資料：<https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/>。
 - 感謝 Rime 中州韻及 rime-cantonese 社群提供輸入法引擎與詞庫基礎。
+
+## 開發聲明
+
+本中文輸入法在開發、測試與文檔整理過程中，曾使用 AI 輔助生成。所使用的模型或工具包括 Gemini 與 DeepSeek；其中 DeepSeek 於 Open Interpreter harness 中執行。
