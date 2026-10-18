@@ -97,7 +97,7 @@ speller:
     - xform/am$/d/
     - xform/ap$/d/
 
-    # 修正：an / at / on 歸位至 F 鍵（讓 hon -> hf）    
+    # 修正：an / at 歸位至 F 鍵    
     - xform/an$/f/
     - xform/at$/f/
 
