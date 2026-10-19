@@ -78,16 +78,16 @@
 | `M` | `im`、`ip` | `tip`（貼） → `TM` |
 | `N` | `in` | `jin`（煙） → `YN` |
 | `O` | `o`、`oi` | `hoi`（海） → `HO` |
-| `P` | `un`、`ut` | `wun`（碗） → `WP` |
+| `P` | `un`、`ut`、`ung`、`eon` | `wun`（碗） → `WP`；`hung`（紅） → `HP` |
 | `Q` | `iu` | `jiu`（要） → `YQ` |
 | `R` | `yun`、`yut`、`uk` | `syut`（雪） → `SR`；`fuk`（福） → `FR` |
-| `S` | `on`、`ong`、`ok`、`ung`、`ot` | `hung`（紅） → `HS`；`hot`（渴） → `HS` |
+| `S` | `on`、`ong`、`ok`、`ot` | `gong`（講） → `GS`；`hot`（渴） → `HS` |
 | `T` | `it` | `bit`（必） → `BT` |
 | `U` | `u` | `fu`（夫） → `FU` |
 | `V` | `yu`、`ui` | `zyu`（豬） → `ZV` |
 | `W` | `oe` | `hoe`（靴） → `HW` |
 | `X` | `oeng`、`oek` | `hoeng`（香） → `HX` |
-| `Y` | `eoi`、`eon`、`eot` | `seoi`（需） → `SY` |
+| `Y` | `eoi`、`eot` | `seoi`（需） → `SY` |
 | `Z` | `ei` | `fei`（非） → `FZ` |
 | `;` | `ing`、`ik` | `ming`（名） → `M;` |
 

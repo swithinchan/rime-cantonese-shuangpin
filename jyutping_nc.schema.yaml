@@ -83,7 +83,7 @@ speller:
     - xform/ing$/;/
     - xform/ik$/;/
     - xform/ong$/s/
-    - xform/ung$/s/
+    - xform/ung$/p/
     - xform/eoi$/y/
     - xform/eon$/p/
     - xform/eot$/y/
