@@ -88,6 +88,7 @@ speller:
     - xform/eon$/p/
     - xform/eot$/y/
     - xform/on$/s/
+    - xform/ot$/s/
     - xform/yut$/r/
     - xform/yun$/r/
     - xform/eng$/g/
@@ -113,7 +114,7 @@ speller:
     - xform/in$/n/
     - xform/it$/t/
     
-    - xform/uk$/s/
+    - xform/uk$/r/
     
     # ou 歸位至 B 鍵
     - xform/ou$/b/
