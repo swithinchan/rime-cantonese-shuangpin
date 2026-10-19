@@ -80,8 +80,8 @@
 | `O` | `o`、`oi` | `hoi`（海） → `HO` |
 | `P` | `un`、`ut` | `wun`（碗） → `WP` |
 | `Q` | `iu` | `jiu`（要） → `YQ` |
-| `R` | `yun`、`yut` | `syut`（雪） → `SR` |
-| `S` | `on`、`ong`、`ok`、`ung`、`uk` | `hung`（紅） → `HS` |
+| `R` | `yun`、`yut`、`uk` | `syut`（雪） → `SR`；`fuk`（福） → `FR` |
+| `S` | `on`、`ong`、`ok`、`ung`、`ot` | `hung`（紅） → `HS`；`hot`（渴） → `HS` |
 | `T` | `it` | `bit`（必） → `BT` |
 | `U` | `u` | `fu`（夫） → `FU` |
 | `V` | `yu`、`ui` | `zyu`（豬） → `ZV` |
