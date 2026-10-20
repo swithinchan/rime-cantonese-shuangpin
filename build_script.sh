@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-rime_dir="/home/switc/.local/share/fcitx5/rime"
+rime_dir="$HOME/.local/share/fcitx5/rime"
 
 echo "==> Building Rime data for ${rime_dir}"
 rime_deployer --build \
